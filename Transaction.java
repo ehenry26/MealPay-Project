@@ -1,12 +1,12 @@
 
-public class Transactions{
+public class Transaction{
     //fields
     private int month;
     private int day;
     private double amount;
 
     //constructor
-    public Transactions(int myMonth, int myDay, double myAmount){
+    public Transaction(int myMonth, int myDay, double myAmount){
         myMonth = month;
         myDay = day;
         myAmount = amount;
