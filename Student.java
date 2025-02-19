@@ -18,13 +18,13 @@ public class Student{
 
     }
     //methods
-    public String getName(String name){
+    public String getName(){
         return name;
     }
-    public int getId(int id){
+    public int getId(){
         return id;
     }
-    public double getBalance(double balance){
+    public double getBalance(){
         return balance;
     }
     public void chargeLunch(int month, int day){
