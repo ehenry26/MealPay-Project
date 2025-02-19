@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Student<Transaction>{
+public class Student{
     //fields
     private String name;
     private int id;
@@ -9,17 +9,14 @@ public class Student<Transaction>{
     private ArrayList<Transaction> transactions;
 
     //constructor
-    public Student(String myName, int myId, double myBalance){
+    public Student(String myName){
         myName = name;
-        myId = id;
-        myBalance = balance;
-        ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+        id = idGen;
+        idGen++;
+        balance = 0;
+        transactions = new ArrayList<Transaction>();
 
     }
-    public void setID(){
-		id = idGen;
-		idGen++;
-	}
     //methods
     public String getName(String name){
         return name;
@@ -32,9 +29,7 @@ public class Student<Transaction>{
     }
     //public double makeTransaction(int month, int day){
         //return balance - transactions.getAmount();
-    }
-
-
+    //}
     public String toString(){
         return "Name: " + name + "ID: #" + id + "Balance: " + balance + "Transactions: " + transactions;
     }
