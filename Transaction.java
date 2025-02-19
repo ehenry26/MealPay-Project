@@ -13,14 +13,14 @@ public class Transaction{
 
     }
     //methods
-    public int getMonth(int month){
+    public int getMonth(){
         return month;
     }
 
-    public int getDay(int day){
+    public int getDay(){
         return day;
     }
-    public double getAmount(double amount){
+    public double getAmount(){
         return amount;
     }
     
