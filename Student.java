@@ -27,9 +27,11 @@ public class Student{
     public double getBalance(double balance){
         return balance;
     }
-    //public double makeTransaction(int month, int day){
-        //return balance - transactions.getAmount();
-    //}
+    public void chargeLunch(int month, int day){
+        balance -= 7; //hard-code for lunch amount
+        Transaction t = new Transaction(month, day, -7);
+        transactions.add(t);
+    }
     public String toString(){
         return "Name: " + name + "ID: #" + id + "Balance: " + balance + "Transactions: " + transactions;
     }
