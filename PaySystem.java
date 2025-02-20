@@ -10,7 +10,12 @@ public class PaySystem{
     }
     //methods
     public void logMeal(int month, int day, int id){
-    //loop through all students and find matching id
+        for(Student st : students){
+            if(id == st.getId()){
+                st.chargeLunch(month, day);
+            }
+        }
+        
     }
     //display students
     public String allStudents(){
@@ -21,9 +26,29 @@ public class PaySystem{
         }
         return all;
     }
-    //display balance
-    //display students negative
+    //display students with negativebalance
+    public String allNegativeStudents(){
+        String neg = "";
+        for(Student st : students){
+            if(st.getBalance() > 0){
+                neg += st.toString();
+                neg += "\n";
+            }
+        }
+        return neg;
+    }
     //look up students
+    public String findStudent(int id){
+        String found = "";
+        for(Student st : students){
+            if(id == st.getId()){
+                found += st.toString();
+            }else{
+                return "ERROR: Student not found";
+            }
+        }
+        return found;
+    }
     
     //display transactions on given day
     public String transactionsByDay(int month, int day){
