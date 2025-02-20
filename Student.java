@@ -10,7 +10,7 @@ public class Student{
 
     //constructor
     public Student(String myName){
-        myName = name;
+        name = myName;
         id = idGen;
         idGen++;
         balance = 0;
@@ -24,7 +24,7 @@ public class Student{
     public int getId(){
         return id;
     }
-    public double getBalance(int balance){
+    public double getBalance(){
         return balance;
     }
     public void chargeLunch(int month, int day){
@@ -49,6 +49,6 @@ public class Student{
     }
 
     public String toString(){
-        return "Name: " + name + ",ID: #" + id + ",Balance: " + balance + ", and Transactions: " + transactions;
+        return "Name: " + name + ", ID: #" + id + ", Balance: " + balance + ", and Transactions: " + transactions;
     }
 }

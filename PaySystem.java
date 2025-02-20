@@ -32,7 +32,9 @@ public class PaySystem{
         students.add(s);
     }
     //add balance
-    
+    public void addBalance(int month, int day, int id, double val){
+        
+    }
     
     //display students with negativebalance
     public String allNegativeStudents(){
