@@ -26,6 +26,14 @@ public class PaySystem{
         }
         return all;
     }
+    //add students
+    public void addStudent(String name){
+        Student s = new Student(name);
+        students.add(s);
+    }
+    //add balance
+    
+    
     //display students with negativebalance
     public String allNegativeStudents(){
         String neg = "";
@@ -43,6 +51,7 @@ public class PaySystem{
         for(Student st : students){
             if(id == st.getId()){
                 found += st.toString();
+                found += "\n";
             }else{
                 return "ERROR: Student not found";
             }
