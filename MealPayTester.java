@@ -10,6 +10,10 @@ public class MealPayTester {
     System.out.println(p.allStudents());
 
     System.out.println("Making charges..");
+    p.addBalance(2, 19, 1, 20);
+    p.addBalance(2, 19, 1, 0);
+    p.addBalance(2, 19, 1, 100);
+
     p.logMeal(2, 19, 1);
     p.logMeal(2, 19, 2);
 

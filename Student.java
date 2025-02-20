@@ -27,6 +27,9 @@ public class Student{
     public double getBalance(){
         return balance;
     }
+    public void addFunds(double value){
+        balance += value;
+    }
     public void chargeLunch(int month, int day){
         balance -= 7; //hard-code for lunch amount
         Transaction t = new Transaction(month, day, -7);

@@ -7,9 +7,9 @@ public class Transaction{
 
     //constructor
     public Transaction(int myMonth, int myDay, double myAmount){
-        myMonth = month;
-        myDay = day;
-        myAmount = amount;
+        month = myMonth;
+        day = myDay;
+        amount = myAmount;
 
     }
     //methods
